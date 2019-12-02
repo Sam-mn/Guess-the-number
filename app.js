@@ -171,21 +171,21 @@ let refresh = ()=>{
 hardLevel.addEventListener('click', function(e) {
     e.preventDefault()
     theNumber = getRandomNumber(100)
-    firstInputLabel.innerText = `Guess a number between 0 and 100`;
+    firstInputLabel.innerText = `Guess a number between 1 and 100`;
     refresh();
 })
 
 mediumLevel.addEventListener('click', function(e) {
     e.preventDefault()
     theNumber = getRandomNumber(50)
-    firstInputLabel.innerText = `Guess a number between 0 and 50`;
+    firstInputLabel.innerText = `Guess a number between 1 and 50`;
     refresh();
 })
 
 easyLevel.addEventListener('click', function(e) {
     e.preventDefault()
     theNumber = getRandomNumber(20)
-    firstInputLabel.innerText = `Guess a number between 0 and 20`;
+    firstInputLabel.innerText = `Guess a number between 1 and 20`;
       refresh();
 })
 
@@ -213,7 +213,8 @@ submitBtn.addEventListener('click', function(e){
             }
         }
         theNumbersYouTried.push(firstInput.value);
-        
+
+
         firstOutput.innerText = theNumbersYouTried.join(' , ');
     })
 
@@ -225,3 +226,4 @@ resetBtn.addEventListener('click', function(e){
     submitBtn.disabled = false;
 
 })
+//vhs test
